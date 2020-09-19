@@ -1,0 +1,33 @@
+{
+  "name": "bunny-crud-test",
+  "version": "1.0.0",
+  "description": "bunny crud project for task manager tech test",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDTorresP/bunnyBackTest.git"
+  },
+  "keywords": [
+    "bunny",
+    "rest",
+    "crud"
+  ],
+  "author": "Joan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JDTorresP/bunnyBackTest/issues"
+  },
+  "homepage": "https://github.com/JDTorresP/bunnyBackTest#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,48 @@
+## =========  USERS  ========= REST API
+
+GET http://localhost:3000/users
+###
+GET http://localhost:3000/users/5f66105533ecbe6339ec6539
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Joan"
+}
+###
+PATCH http://localhost:3000/users/5f66105533ecbe6339ec6539
+Content-Type: application/json
+
+{
+    "name": "New Joan"
+}
+###
+DELETE http://localhost:3000/users/5f66105533ecbe6339ec6539
+
+
+### ========= TASKS  ========= REST API  ========= 
+
+GET http://localhost:3000/tasks
+###
+GET http://localhost:3000/tasks/5f661fcc28234467129534ed
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "description": "Make rest API for tasks",
+    "state": "TODO",
+    "user_id":"5f66105533ecbe6339ec6539"
+}
+###
+PATCH http://localhost:3000/tasks/5f662265fb667967bdb810bf
+Content-Type: application/json
+
+{
+    "description": "Make rest API for tasks",
+    "state": "DONE",
+    "user_id":"5f66105533ecbe6339ec6539"
+}
+###
+DELETE http://localhost:3000/tasks/5f661fcc28234467129534ed
