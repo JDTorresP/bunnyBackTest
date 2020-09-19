@@ -13,3 +13,4 @@ Bunny Inc Tech Test for a simple backend service
 - 8:50 - 9:50 Break
 - 10:00 - 11:30 Create Rest API for Tasks
 - 10:30 - 12:30 Break for medical appointment
+- 12:40 - 1:30 Deploy on AWS lambda and make Welcome Api page

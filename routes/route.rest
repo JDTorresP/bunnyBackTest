@@ -8,7 +8,7 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "Joan"
+    "name": "Lady"
 }
 ###
 PATCH http://localhost:3000/users/5f66105533ecbe6339ec6539
