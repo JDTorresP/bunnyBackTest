@@ -1,10 +1,10 @@
-// require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const path = require('path');
-
 const serverless = require('serverless-http');
+
+if(!process.env.IS_AWS) require('dotenv').config();
 
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 const db = mongoose.connection;
@@ -30,6 +30,6 @@ const specialTaskRouting = require('./routes/special-task-routing')
 app.use('/tasks/assigned', specialTaskRouting)
 
 
-// app.listen(3000, () => {console.log(`Server Started at http://localhost:${3000}`)})
+if(!process.env.IS_AWS) app.listen(3000, () => {console.log(`Server Started at http://localhost:${3000}`)})
 
 module.exports.handler = serverless(app);
